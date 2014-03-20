@@ -1,0 +1,25 @@
+
+
+/ / Errores.cpp: Define el punto de entrada para la aplicación de consola.
+/ / Autor: Nikole Zurita
+/ / Fecha: 25/02/14
+
+# Include "stdafx.h"
+# Include <iostream>
+# Include "conio.h"
+
+ using namespace std;
+
+int main () {
+
+     base de flotador, Altura, zona;
+	 cout << "Calculo del área del Triangulo \ n \ n";
+	 cout << "Ingrese ALTURA:";
+	 cin >> ALTURA;
+	 cout << "base Ingrese:";
+     cin >> base;
+     area = (base * Altura) / 2;
+	 cout << "El area es:";
+	 cout << zona;
+	 getch ();
+}
