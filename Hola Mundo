@@ -1,0 +1,19 @@
+
+/ / HolaMundo.cpp: Define el punto de entrada para la aplicación de consola.
+/ / Autor: Nikole Zurita
+/ / Fecha: 18/02/2014
+
+# Include "stdafx.h"
+# Include <iostream>
+# Include "conio.h"
+
+using namespace std;
+
+
+int main () 
+{
+	cout << "Dios Es Amor \ n";
+    cout << "Esfuérzate y sí Valiente";
+    getch ();
+    return 0;
+}
