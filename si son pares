@@ -1,6 +1,7 @@
+
 // si son pares.cpp : Defines the entry point for the console application.
 // autor: Nikole Zurita
-// fecha: 25-03-2014
+// fecha: 25-03-14
 
 #include "stdafx.h"
 #include <iostream>
@@ -11,12 +12,17 @@ using namespace std;
 void main ()
 {
 int num1, num2, res;
+cout<< "Numero 1: ";
 cin >>num1;
+cout<< "Numero 2: ";
 cin >>num2;
-if ((num1%2)==0
-    &&(num2%2==0))
+if ((num1%2)==0 &&(num2%2==0))
+{
+	cout<< "son pares= ";
 	res=num1+num2;
+}
 else
+    cout<< "Son Impares= ";
     res=num1*num2;
 cout<<res;
 getch();
