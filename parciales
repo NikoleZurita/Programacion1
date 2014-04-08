@@ -1,6 +1,6 @@
 // parcial.cpp : Defines the entry point for the console application.
 // autor: Nikole Azela Zurita Cossio
-
+// fecha:08-04-14
 #include "stdafx.h"
 #include <iostream>
 #include "conio.h"
