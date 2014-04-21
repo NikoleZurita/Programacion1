@@ -1,0 +1,27 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+void main()
+{
+	int f,i,n,sig;
+	float s,x;
+	cout<< "Ingrese el valor de x: ";
+	cin>> x;
+	cout<< "Ingrese el valor de N: ";
+	cin>> n;
+	s=0;
+	f=1;
+	sig=1;
+	for(i=1;i<=n;i++)
+	{
+		f=f*i;
+		s=s+sig*pow(x,i)/f;
+		sig=-1*sig;
+	}
+	cout<<s;
+	getch();
+}
