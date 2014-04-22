@@ -1,0 +1,19 @@
+// nombre.cpp : Defines the entry point for the console application.
+//autor: Nikole Zurita Cossio
+// fecha: 22-04-14
+
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+
+using namespace std;
+
+void main()
+
+{
+char caracter='*';
+int I;
+for   (I=0;I<=19;I++)
+    cout<<caracter;
+getch ();
+}
