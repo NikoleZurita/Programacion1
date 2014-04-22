@@ -1,0 +1,21 @@
+// nuevo.cpp : Defines the entry point for the console application.
+// fecha:22-04-2014
+
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+
+using namespace std;
+void main()
+{
+
+int N,producto,i;
+cout<<"ingrese N";
+cin>>N;
+producto=1;
+for (i=1;i<N;i++)
+   producto=(producto*1);
+cout<<"el factorial es"<<producto;
+getch();
+
+}
