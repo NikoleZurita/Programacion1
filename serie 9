@@ -1,0 +1,31 @@
+// serie.cpp: define el punto de entrada de la aplicación de consola.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+void main()
+{
+
+int sig,f,i,N;
+float s,x;
+cout<<"ingrese el valor de x";
+cin>>x;
+cout<<"ingrese el valor de N";
+cin>>N;
+s=0;
+f=1;
+sig=1;
+for(i=1;i<=N;i++)
+{
+	f=f*i;
+	if(i%2==0)
+		s=s-pow(x,i)/f;
+	else
+		s=s+pow(x,i)/f;
+}
+cout<<s;
+getch();
+}
