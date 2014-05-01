@@ -1,0 +1,44 @@
+// serie.cpp: define el punto de entrada de la aplicación de consola.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+void main()
+{
+
+int a,b,c,mcd,cont,menor;
+cout<<"ingresar a",
+cin>>a;
+cout<<"ingrese b";
+cin>>b;
+cout<<"ingrese c";
+cin>>c;
+if(a>b && a>c)
+   menor=a;
+else
+if(a>b && a>c)
+   menor=b;
+else
+if(a>b && a>c)
+   menor=c;
+mcd=1;
+cout=2;
+while(cout<=menor)
+{
+	if(a%==0)&&(b%==0)&&(c%==0)
+	{
+		a=a/cont;
+		b=b/cont;
+		c=c/cont;
+		menor=menor/cont;
+		mcd=mcd/cont;
+		cont=cont-1;
+	}
+	cont=cont+1;
+}
+cont<<mcd;
+getch();
+}
