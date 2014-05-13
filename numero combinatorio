@@ -1,0 +1,42 @@
+// en clases.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+int factorial(int numero);
+float potencia(float base,int exponente);
+
+void main()
+{
+	int x,i,n;
+	float suma;
+	cout<<"ingrese el valor de x: ";
+	cin>>x;
+	cout<<"ingrese el valor de n: ";
+	cin>>n;
+	suma=0;
+	for(i=1;i<=n;i++)
+		suma=suma+potencia(x,i)/factorial(i); //llamadas a la funcion
+	cout<<"el valor de la suma es: "<<suma;
+	getch();
+}
+int factorial (int numero)  //declaracion de la funcion
+{
+	int fac=1;
+
+	for (int i=1;i<=numero;i++)
+		fac=fac*i;
+	return fac;
+		
+}
+float potencia(float base,int exponente)
+{
+	float pot=1;
+	for(int i=1;i<=exponente;i++)
+		pot=pot*base;
+	return pot;
+}
