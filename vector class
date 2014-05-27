@@ -1,0 +1,48 @@
+// vector1.cpp : Defines the entry point for the console application.
+//autor:Nikole Zurita
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+void leer (int vector[],int tam);
+void escribir (int vector[],int tam);
+void ordenar (int vector[],int tam);
+void main()
+{
+	int v[100],tam;
+	do
+	{
+		cout<< "Ingrese el numero de elementos del vector: ";
+		cin>>tam;
+	}
+	while
+		(tam>100) // (tam<=0)
+	leer    (v,tam);
+	ordenar (v,tam);
+	escribir(v,tam);
+	getch ();
+}
+void leer (int vector[],int tam)
+{
+	for(int i=0;i<tam;i++)
+		cin>>vector[i];
+}
+void escribir (int vector[],int tam)
+{
+	for(int i=0;i<tam;i++)
+		cout<<vector[i];
+}
+void ordenar (int vector[],int tam)
+{
+	int aux;
+	for(int i=0;i<tam-1;i++)
+		for(int k=0;k<tam;k++)
+			if(vector[i]>vector[k])
+			{
+				aux=vector[i];
+				vector[i]=vector[k];
+				vector[k]=aux;
+			}
+}
